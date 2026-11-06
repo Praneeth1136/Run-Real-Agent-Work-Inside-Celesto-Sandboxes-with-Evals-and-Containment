@@ -1,0 +1,30 @@
+{
+  "jobs": [
+    {
+      "sandbox_name": "sbx-concurrent01",
+      "started_at": "2026-11-06T15:00:00Z"
+    },
+    {
+      "sandbox_name": "sbx-concurrent02",
+      "started_at": "2026-11-06T15:00:01Z"
+    },
+    {
+      "sandbox_name": "sbx-concurrent03",
+      "started_at": "2026-11-06T15:00:02Z"
+    },
+    {
+      "sandbox_name": "sbx-concurrent04",
+      "started_at": "2026-11-06T15:00:03Z"
+    },
+    {
+      "sandbox_name": "sbx-concurrent05",
+      "started_at": "2026-11-06T15:00:04Z"
+    },
+    {
+      "sandbox_name": "sbx-concurrent06",
+      "started_at": "2026-11-06T15:00:05Z"
+    }
+  ],
+  "breakage_notes": "Observed concurrency across 6 parallel Celesto microVM sandboxes: monitored guest port allocation, CPU contention, and Firecracker vsock channels. No name collisions or kernel deadlocks occurred; memory pressure remained within allocated 2GB limits."
+}
+

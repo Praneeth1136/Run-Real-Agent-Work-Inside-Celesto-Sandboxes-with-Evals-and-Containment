@@ -1,0 +1,7 @@
+{
+  "who": "DevSecOps and security engineering teams responsible for evaluating untrusted third-party dependencies, pull requests, and automated software packages.",
+  "agent_work": "Executes autonomous static analysis, dynamic package detonation, and isolation policy checks inside Celesto microVM sandboxes to detect malicious behavior.",
+  "proof_output": "Structured containment report and audited command ledger verifying guest-level isolation and zero host exposure.",
+  "idea_source": "idea_bank"
+}
+

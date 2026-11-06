@@ -1,0 +1,46 @@
+{"step": 1, "event": "step_started", "sandbox_name": "sbx-failrecov01", "ts": "2026-11-06T15:20:00Z", "description": "Inspect guest environment"}
+{"step": 1, "event": "step_succeeded", "sandbox_name": "sbx-failrecov01", "ts": "2026-11-06T15:20:01Z", "exit_code": 0}
+{"step": 2, "event": "step_started", "sandbox_name": "sbx-failrecov01", "ts": "2026-11-06T15:20:01Z", "description": "Prepare isolated workspace"}
+{"step": 2, "event": "step_succeeded", "sandbox_name": "sbx-failrecov01", "ts": "2026-11-06T15:20:02Z", "exit_code": 0}
+{"step": 3, "event": "step_started", "sandbox_name": "sbx-failrecov01", "ts": "2026-11-06T15:20:02Z", "description": "Fetch target package payload"}
+{"step": 3, "event": "step_succeeded", "sandbox_name": "sbx-failrecov01", "ts": "2026-11-06T15:20:03Z", "exit_code": 0}
+{"step": 4, "event": "step_started", "sandbox_name": "sbx-failrecov01", "ts": "2026-11-06T15:20:03Z", "description": "Parse package metadata & entrypoints"}
+{"step": 4, "event": "step_succeeded", "sandbox_name": "sbx-failrecov01", "ts": "2026-11-06T15:20:04Z", "exit_code": 0}
+{"step": 5, "event": "step_started", "sandbox_name": "sbx-failrecov01", "ts": "2026-11-06T15:20:04Z", "description": "Perform static AST safety scan"}
+{"step": 5, "event": "step_succeeded", "sandbox_name": "sbx-failrecov01", "ts": "2026-11-06T15:20:05Z", "exit_code": 0}
+{"step": 6, "event": "snapshot_created", "sandbox_name": "sbx-failrecov01", "ts": "2026-11-06T15:20:05Z", "snapshot_id": "step6-baseline"}
+{"step": 7, "event": "step_started", "sandbox_name": "sbx-failrecov01", "ts": "2026-11-06T15:20:06Z", "description": "Detonate package inside microVM"}
+{"step": 7, "event": "step_failed", "sandbox_name": "sbx-failrecov01", "ts": "2026-11-06T15:20:07Z", "error": "ExecutionCrash: exit code 137"}
+{"step": 7, "event": "policy_applied", "policy": "rollback", "sandbox_name": "sbx-failrecov01", "ts": "2026-11-06T15:20:07Z", "details": "Snapshot restored to step 6 baseline"}
+{"step": 7, "event": "rollback_completed", "sandbox_name": "sbx-failrecov01", "ts": "2026-11-06T15:20:08Z", "restored_to": "step6-baseline"}
+{"step": 7, "event": "step_retried", "sandbox_name": "sbx-failrecov01", "ts": "2026-11-06T15:20:08Z", "strategy": "safe_profile"}
+{"step": 7, "event": "step_succeeded", "sandbox_name": "sbx-failrecov01", "ts": "2026-11-06T15:20:09Z", "exit_code": 0}
+{"step": 8, "event": "step_started", "sandbox_name": "sbx-failrecov01", "ts": "2026-11-06T15:20:09Z", "description": "Capture process telemetry & file diffs"}
+{"step": 8, "event": "step_succeeded", "sandbox_name": "sbx-failrecov01", "ts": "2026-11-06T15:20:10Z", "exit_code": 0}
+{"step": 9, "event": "step_started", "sandbox_name": "sbx-failrecov01", "ts": "2026-11-06T15:20:10Z", "description": "Generate containment verification report"}
+{"step": 9, "event": "step_succeeded", "sandbox_name": "sbx-failrecov01", "ts": "2026-11-06T15:20:11Z", "exit_code": 0}
+{"step": 10, "event": "step_started", "sandbox_name": "sbx-failrecov01", "ts": "2026-11-06T15:20:11Z", "description": "Export final proof report"}
+{"step": 10, "event": "step_succeeded", "sandbox_name": "sbx-failrecov01", "ts": "2026-11-06T15:20:12Z", "exit_code": 0}
+
+{"step": 1, "event": "step_started", "sandbox_name": "sbx-aae82f7d44", "ts": "2026-11-06T15:51:13.623670+00:00", "description": "Inspect guest environment"}
+{"step": 1, "event": "step_succeeded", "sandbox_name": "sbx-aae82f7d44", "ts": "2026-11-06T15:51:13.624664+00:00", "exit_code": 0}
+{"step": 2, "event": "step_started", "sandbox_name": "sbx-aae82f7d44", "ts": "2026-11-06T15:51:13.624821+00:00", "description": "Prepare isolated workspace"}
+{"step": 2, "event": "step_succeeded", "sandbox_name": "sbx-aae82f7d44", "ts": "2026-11-06T15:51:13.625088+00:00", "exit_code": 0}
+{"step": 3, "event": "step_started", "sandbox_name": "sbx-aae82f7d44", "ts": "2026-11-06T15:51:13.625207+00:00", "description": "Fetch target package payload"}
+{"step": 3, "event": "step_succeeded", "sandbox_name": "sbx-aae82f7d44", "ts": "2026-11-06T15:51:13.625555+00:00", "exit_code": 0}
+{"step": 4, "event": "step_started", "sandbox_name": "sbx-aae82f7d44", "ts": "2026-11-06T15:51:13.625693+00:00", "description": "Parse package metadata & entrypoints"}
+{"step": 4, "event": "step_succeeded", "sandbox_name": "sbx-aae82f7d44", "ts": "2026-11-06T15:51:13.625972+00:00", "exit_code": 0}
+{"step": 5, "event": "step_started", "sandbox_name": "sbx-aae82f7d44", "ts": "2026-11-06T15:51:13.626084+00:00", "description": "Perform static AST safety scan"}
+{"step": 5, "event": "step_succeeded", "sandbox_name": "sbx-aae82f7d44", "ts": "2026-11-06T15:51:13.626353+00:00", "exit_code": 0}
+{"step": 6, "event": "step_started", "sandbox_name": "sbx-aae82f7d44", "ts": "2026-11-06T15:51:13.626465+00:00", "description": "Snapshot healthy baseline state"}
+{"step": 6, "event": "snapshot_created", "sandbox_name": "sbx-aae82f7d44", "ts": "2026-11-06T15:51:13.626682+00:00", "snapshot_id": "step6-baseline"}
+{"step": 7, "event": "step_started", "sandbox_name": "sbx-aae82f7d44", "ts": "2026-11-06T15:51:13.626800+00:00", "description": "Detonate package inside microVM"}
+{"step": 7, "event": "step_failed", "sandbox_name": "sbx-aae82f7d44", "ts": "2026-11-06T15:51:13.626909+00:00", "error": "ExecutionFailed: step 7 simulation error"}
+{"step": 7, "event": "policy_applied", "sandbox_name": "sbx-aae82f7d44", "ts": "2026-11-06T15:51:13.627032+00:00", "policy": "rollback", "rationale": "Restoring step 6 snapshot baseline to safely roll back mutated sandbox state."}
+{"step": 7, "event": "rollback_completed", "sandbox_name": "sbx-aae82f7d44", "ts": "2026-11-06T15:51:13.627147+00:00", "restored_to": "step6-baseline"}
+{"step": 8, "event": "step_started", "sandbox_name": "sbx-aae82f7d44", "ts": "2026-11-06T15:51:13.627402+00:00", "description": "Capture process telemetry & file diffs"}
+{"step": 8, "event": "step_succeeded", "sandbox_name": "sbx-aae82f7d44", "ts": "2026-11-06T15:51:13.627658+00:00", "exit_code": 0}
+{"step": 9, "event": "step_started", "sandbox_name": "sbx-aae82f7d44", "ts": "2026-11-06T15:51:13.627785+00:00", "description": "Generate containment verification report"}
+{"step": 9, "event": "step_succeeded", "sandbox_name": "sbx-aae82f7d44", "ts": "2026-11-06T15:51:13.628181+00:00", "exit_code": 0}
+{"step": 10, "event": "step_started", "sandbox_name": "sbx-aae82f7d44", "ts": "2026-11-06T15:51:13.628338+00:00", "description": "Export final proof report"}
+{"step": 10, "event": "step_succeeded", "sandbox_name": "sbx-aae82f7d44", "ts": "2026-11-06T15:51:13.628744+00:00", "exit_code": 0}

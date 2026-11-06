@@ -1,0 +1,8 @@
+{
+  "failed_step": 7,
+  "total_steps": 10,
+  "policy": "rollback",
+  "rationale": "When step 7 fails due to an unexpected execution crash or corrupted environment state during package detonation, the system triggers the 'rollback' recovery policy. Instead of incurring the full latency and resource cost of discarding the guest and provisioning a fresh VM, or risking lingering mutations by blindly resuming, the orchestrator restores the clean snapshot captured at step 6. This brings filesystem and memory state back to a verified baseline immediately, allowing safe diagnostic inspection or isolated retry.",
+  "trace_path": "reports/failure_trace.jsonl"
+}
+

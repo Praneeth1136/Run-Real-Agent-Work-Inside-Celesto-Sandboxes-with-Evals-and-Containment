@@ -1,0 +1,20 @@
+{
+  "capabilities": [
+    {
+      "id": "safety_hooks",
+      "why": "Safety hooks intercept every command before VM dispatch, evaluating against strict security policies and blocking malicious commands like exfiltration and destructive root deletes.",
+      "evidence_path": "agent/hooks.py"
+    },
+    {
+      "id": "network_policy",
+      "why": "Network policies enforce egress rules on the microVM sandbox, completely disabling outbound internet access to prevent sensitive token or secret exfiltration during untrusted code execution.",
+      "evidence_path": "agent/sandbox.py"
+    },
+    {
+      "id": "snapshots",
+      "why": "Snapshots capture full filesystem and memory state prior to untrusted execution, allowing instant deterministic rollback when an unexpected error or unsafe condition is detected.",
+      "evidence_path": "agent/sandbox.py"
+    }
+  ]
+}
+
