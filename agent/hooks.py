@@ -43,7 +43,7 @@ def evaluate_command_safety(sandbox_name: str, command: str) -> Tuple[bool, str]
         if re.search(pattern, cmd, re.IGNORECASE):
             append_command_log(sandbox_name, cmd, decision="block")
             return False, f"Command blocked by safety hook: matched rule '{pattern}'"
-    
+
     append_command_log(sandbox_name, cmd, decision="allow")
     return True, "Command allowed"
 
