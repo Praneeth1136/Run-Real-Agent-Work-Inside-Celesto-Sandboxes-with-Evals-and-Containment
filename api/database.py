@@ -92,7 +92,7 @@ def insert_run(run: Dict[str, Any]) -> Dict[str, Any]:
             return res
         finally:
             conn.close()
-    
+
     # In-memory fallback
     existing = [r for r in _MEMORY_RUNS if r["run_id"] == run["run_id"]]
     if existing:
