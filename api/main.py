@@ -59,13 +59,13 @@ def create_run(payload: dict):
 
     if not run_id or not isinstance(run_id, str):
         raise HTTPException(status_code=400, detail="run_id is required and must be a string")
-    
+
     if not sandbox_name or not isinstance(sandbox_name, str) or not SANDBOX_REGEX.match(sandbox_name):
         raise HTTPException(
             status_code=400,
             detail=f"sandbox_name must match '^sbx-[a-z0-9]{{8,}}$', got '{sandbox_name}'"
         )
-    
+
     if not problem_id or not isinstance(problem_id, str):
         raise HTTPException(status_code=400, detail="problem_id is required and must be a string")
 
