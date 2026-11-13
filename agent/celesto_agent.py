@@ -55,7 +55,7 @@ class SecurityDetonationAgent:
         t0 = time.time()
         for step_num, step_name, cmd in steps:
             self.log_trace(step_num, "step_started", description=step_name)
-            
+
             if step_num == 6 and cmd == "SNAPSHOT":
                 self.sandbox.snapshot("step6-baseline")
                 self.log_trace(step_num, "snapshot_created", snapshot_id="step6-baseline")
@@ -65,7 +65,7 @@ class SecurityDetonationAgent:
             if step_num == 7 and trigger_step7_failure:
                 # Deliberate failure at step 7 to demonstrate recovery policy
                 self.log_trace(step_num, "step_failed", error="ExecutionFailed: step 7 simulation error")
-                
+
                 # Apply named recovery policy
                 self.log_trace(
                     step_num,
