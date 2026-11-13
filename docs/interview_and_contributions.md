@@ -78,12 +78,12 @@ In `celesto/cli/doctor.py`:
 **Title: How We Contained Untrusted AI Agents Inside Celesto MicroVMs**
 
 > In 2026, building an agent is easy: hook an LLM up to a tool execution loop. But giving an agent tools like `run_shell` or `install_package` on your laptop or production server is asking for disaster: one prompt-injected README or hallucinated command can wipe your disk or exfiltrate your `.env`.
-> 
+>
 > For the Celesto AI Track Challenge, we built the **Autonomous Security Detonation Agent**:
 > 🔒 **MicroVM Hardware Isolation**: Every tool call runs inside disposable Firecracker microVMs with dedicated guest kernels.
 > 🛡️ **Safety Callbacks & Egress Policies**: Pre-execution filters block dangerous operations before VM dispatch, while network policies prevent data exfiltration.
 > ⏱️ **Snapshot Rollback**: When step 7 of our 10-step pipeline failed, we didn't wipe everything or start from scratch. We restored a clean step 6 snapshot in sub-second time.
 > 📊 **Tested Across 20 Fresh Sandboxes**: 90% success rate, 0.55s median boot-to-ready time, and $0.004 total runtime cost.
-> 
+>
 > Check out the project repo and architectural breakdown! #AI #DevSecOps #CelestoAI #Firecracker #MicroVMs #AgenticAI
 
