@@ -8,3 +8,5 @@ htmlcov/
 venv/
 .venv/
 
+# GitGry Security Hygiene
+node_modules/
