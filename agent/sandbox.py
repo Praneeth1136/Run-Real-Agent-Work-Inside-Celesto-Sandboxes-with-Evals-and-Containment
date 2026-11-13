@@ -98,7 +98,7 @@ class CelestoSandbox:
                 return CelestoExecutionResult(res.exit_code, res.stdout, res.stderr)
             except Exception as e:
                 return CelestoExecutionResult(1, "", str(e))
-        
+
         # Emulated sandbox execution inside guest environment
         return CelestoExecutionResult(0, f"[guest:{self.name}]$ {command}\nSuccess", "")
 
